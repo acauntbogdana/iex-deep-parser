@@ -1,1 +1,20 @@
+[package]
+name    = "iex-deep-parser"
+version = "0.3.0"
+edition = "2021"
 
+[[bin]]
+name = "iex-deep-parser"
+path = "src/main.rs"
+
+[dependencies]
+flate2   = "1.0"
+arrow    = { version = "53", default-features = false, features = ["ipc"] }
+parquet  = { version = "53", default-features = false, features = ["arrow", "zstd"] }
+anyhow   = "1"
+
+[profile.release]
+opt-level     = 3
+lto           = true
+codegen-units = 1
+strip         = true
