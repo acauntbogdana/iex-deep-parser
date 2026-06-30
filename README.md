@@ -11,7 +11,7 @@ Includes automatic download from Google Cloud Storage and a multi-threaded proce
 ## Installation & Build
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/iex-deep-parser.git
+git clone https://github.com/acauntbogdana/iex-deep-parser.git
 cd iex-deep-parser
 
 # Set up a virtual environment and install Python dependencies
